@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Food Zoned</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up"> Don\'t have an account? Sign up now </string>
+    <string name="preference_file_name">User Details</string>
+    <string name="home">Home</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

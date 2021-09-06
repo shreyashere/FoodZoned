@@ -1,0 +1,3 @@
+include ':solarmobil'
+include ':app'
+rootProject.name = "Food Zoned"

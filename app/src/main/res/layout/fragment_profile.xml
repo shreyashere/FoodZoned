@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/imgPerson"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:text="Shreyas"
+            android:textColor="#7C7676"
+            android:textAlignment="center"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/txtMobNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/txtName"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#7C7676"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/txtMobNo"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="6dp"
+            android:textColor="#7C7676" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#E81123"
+            android:padding="6dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

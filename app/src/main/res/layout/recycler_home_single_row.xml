@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:weightSum="8" >
+
+        <ImageView
+            android:id="@+id/imgRes"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.2"
+            android:background="@drawable/rounded_edittext"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foodicon"
+            android:layout_marginStart="10dp" />
+
+        <RelativeLayout
+            android:layout_weight="4.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/txtResName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant name"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cost"
+                android:layout_below="@+id/txtResName"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="13dp"
+                android:text="Cost"
+                android:padding="3dp"
+                android:drawablePadding="2dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" >
+
+            <TextView
+                android:id="@+id/txtFav"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_fav_outline"
+                android:tag="disliked" />
+            
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFav"
+                android:layout_centerHorizontal="true"
+                android:text="4.5"
+                android:textColor="#ffc107"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

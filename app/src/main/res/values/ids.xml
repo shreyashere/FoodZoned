@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerRes" type="id" />
+    <item name="relativeLayoutProceedToCart" type="id"/>
+    <item name="btnProceed" type="id"/>
+    <item name="frameLayout" type="id"/>
+    <item name="resProgressLayout" type="id"/>
+    <item name="txtFavo" type="id" />
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="236dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_icon" />
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogin"
+        android:padding="7dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Mobile Number (10 digits)"
+        android:drawableLeft="@drawable/ic_mobile_no"
+        android:drawablePadding="4dp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMobileNo"
+        android:padding="7dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="4dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:fontFamily="monospace"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In "
+        android:layout_below="@+id/etPassword"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:text="@string/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:fontFamily="monospace"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="monospace"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
